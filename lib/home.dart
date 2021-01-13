@@ -33,13 +33,14 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('images/logo.png'),
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
                     onTap: _abrirTeleEmpresa,
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
               padding: EdgeInsets.only(top: 32),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
                     onTap: _abrirTeleCliente,
