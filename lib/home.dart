@@ -1,3 +1,7 @@
+import 'package:atm_consultoria/telaCliente.dart';
+import 'package:atm_consultoria/telaContato.dart';
+import 'package:atm_consultoria/telaEmpresa.dart';
+import 'package:atm_consultoria/telaServico.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -7,18 +11,41 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
+  //metodo para navegar para a tela de empresa
   void _abrirTeleEmpresa(){
+    
+    Navigator.push(
+        context, 
+        MaterialPageRoute(builder: (context) => TelaEmpresa())
+    );
 
   }
-
+  //metodo para navegar para a tela de serviço
   void _abrirTelaServico(){
 
-  }
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => TelaServico())
+    );
 
+
+  }
+  //metodo para navegar para a tela de cliente
   void _abrirTeleCliente(){
 
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => TelaCliente())
+    );
+
   }
+  //metodo para navegar para a tela de contato
   void _abrirTelaContato(){
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => TelaContato())
+    );
 
   }
   @override
