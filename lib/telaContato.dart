@@ -12,12 +12,13 @@ class _TelaContatoState extends State<TelaContato> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Contato'),
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.green,
         ),
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
@@ -27,7 +28,7 @@ class _TelaContatoState extends State<TelaContato> {
                       child: Text(
                         'Contatos',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: Colors.green,
                           fontSize: 25,
                         ),
                       ),
@@ -36,11 +37,16 @@ class _TelaContatoState extends State<TelaContato> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
-                  child: Text('Somos uma Garagem para desenvolvimento das habilidades do futuro, '
-                      'nossa missão é desenvolver a mentalidade e o potencial dos alunos utilizando atividades '
-                      'práticas e criativas, utilizando o material da LEGO Education e outras ferramentas.'
-                  ),
-                )
+                  child: Text('atendimento@rt.com.br'),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Text('telefone: (14) 99766-5556'),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Text('telefone: (14) 3324-2432'),
+                ),
               ],
             ),
           ),

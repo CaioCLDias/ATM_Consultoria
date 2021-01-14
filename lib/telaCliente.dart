@@ -12,12 +12,13 @@ class _TelaClienteState extends State<TelaCliente> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Cliente'),
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.lime,
         ),
         body: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
@@ -27,7 +28,7 @@ class _TelaClienteState extends State<TelaCliente> {
                       child: Text(
                         'Clientes',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: Colors.lime,
                           fontSize: 25,
                         ),
                       ),
@@ -36,11 +37,14 @@ class _TelaClienteState extends State<TelaCliente> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
-                  child: Text('Somos uma Garagem para desenvolvimento das habilidades do futuro, '
-                      'nossa missão é desenvolver a mentalidade e o potencial dos alunos utilizando atividades '
-                      'práticas e criativas, utilizando o material da LEGO Education e outras ferramentas.'
-                  ),
-                )
+                  child: Image.asset('images/cliente1.png'),
+                ),
+                Text('Empresa de Software'),
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Image.asset('images/cliente2.png'),
+                ),
+                Text('Empresa de Auditoria')
               ],
             ),
           ),
