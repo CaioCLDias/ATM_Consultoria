@@ -60,6 +60,8 @@ flutter:
     - images/detalhe_servico.png
     - images/cliente1.png
     - images/cliente2.png
+    - images/rt_logo.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
