@@ -12,7 +12,7 @@ class _TelaEmpresaState extends State<TelaEmpresa> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Robot Time'),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.deepOrange,
       ),
       body: SingleChildScrollView(
         child: Container(
